@@ -1,4 +1,6 @@
-import homeIcon from '../../../assets/icons/home.svg'
+import { NavLink } from "react-router-dom";
+import { sideMenuData } from "@/constant/sideMenu.constant";
+import { Tooltip } from "react-tooltip";
 
 const SideMenu = () => {
   return (
@@ -6,8 +8,34 @@ const SideMenu = () => {
       <div className="">
         <img src="https://lineone.piniastudio.com/images/app-logo.svg" alt="" />
       </div>
-      <img src={homeIcon} alt="" className="size-10" />
+      <div className="flex flex-col border-2 items-center gap-4">
+        {sideMenuData.map((menu) => (
+          <div className="bg-[#edecfc] h-max p-[6px] rounded-md">
+            <NavLink
+              id={menu.tooltip}
+              className={""}
+              to={menu.path}
+              key={menu.id}
+            >
+              <div className="">
+                <img src={menu.icon} alt="" className="size-10" />
+              </div>
+            </NavLink>
+            <Tooltip
+              style={{
+                backgroundColor: "silver",
+                color: "black",
+                fontWeight: "bold",
+                padding: "5px 7px",
+              }}
+              anchorSelect={`#${menu.tooltip}`}
+              content={menu.title}
+              place="right"
+            />
+          </div>
+        ))}
+      </div>
     </div>
   );
-}
-export default SideMenu
+};
+export default SideMenu;
