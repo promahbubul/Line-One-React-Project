@@ -1,26 +1,27 @@
 import ToggleButton from "@/components/ui/ToggleButton";
 import { useState } from "react";
 import SyntaxHighlighter from "react-syntax-highlighter";
-import { monokaiSublime } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import JsxParser from "react-jsx-parser";
 import { BsCopy } from "react-icons/bs";
 import { LuCopyCheck } from "react-icons/lu";
-import { atomOneDark, docco } from "react-syntax-highlighter/dist/cjs/styles/hljs";
-import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { atomOneDark } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 
 type TCardContainer = {
   title: string;
   description: string;
   jsxCodeString: string;
+  components?: Record<string, React.ComponentType<never>>; // Corrected type for components
 };
 
 const CardContainer = ({
   title,
   description,
   jsxCodeString,
+  components = {}, // Default components to an empty object if not passed
 }: TCardContainer) => {
   const [showCode, setShowCode] = useState(false);
   const [copy, setCopy] = useState(false);
+
   return (
     <div className="bg-white rounded-lg p-5 shadow-md shadow-slate-200 w-full">
       <div className="flex flex-row justify-between items-center">
@@ -29,11 +30,11 @@ const CardContainer = ({
       </div>
       <p className="w-1/2 text-sm text-[#62748e]">{description}</p>
       <div className="mb-5 mt-5">
-        <JsxParser jsx={jsxCodeString} />
+        <JsxParser components={components} jsx={jsxCodeString} />
       </div>
       {showCode && (
-        <div className="h-80   border-red-500">
-          <div className="bg-[#0b0b09] rounded-t-[10px] flex flex-row items-center justify-between py-2 px-5  font-semibold text-white">
+        <div className="h-80 border-red-500">
+          <div className="bg-[#0b0b09] rounded-t-[10px] flex flex-row items-center justify-between py-2 px-5 font-semibold text-white">
             <h5 className="">Example</h5>
             {copy ? (
               <button onClick={() => setCopy(false)} className="">

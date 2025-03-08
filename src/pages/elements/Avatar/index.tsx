@@ -35,6 +35,12 @@ const Avatar = () => {
       <AvatarWithDots />
       <SquircleAvatarDots />
       <InitialWithDots />
+      <AvatarDotColors />
+      <AvatarDotPing />
+      <AvatarDotPosition />
+      <AvatarGroup />
+      <SquareAvatarGroup />
+      <AvatarSkeleton />
       {/* // <GradientBorder /> */}
     </div>
   );
