@@ -32,6 +32,9 @@ const Avatar = () => {
       <SoftInitialAvatar />
       <BorderedInitialAvatar />
       <SquareSoftInitial />
+      <AvatarWithDots />
+      <SquircleAvatarDots />
+      <InitialWithDots />
       {/* // <GradientBorder /> */}
     </div>
   );
