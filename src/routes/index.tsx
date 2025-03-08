@@ -1,6 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import {
-  applicationMoreMenuData,
   dashboardMoreMenuData,
   elementsMenuData,
 } from "@/constant/moreMenu.constant";
@@ -14,7 +13,7 @@ const routes = createBrowserRouter([
     path: "/",
     element: <Layout />,
     errorElement: <ErrorPage />,
-    children: sideMenuData.map(({ path, title }) => ({
+    children: sideMenuData.map(({ path }) => ({
       path: path,
       element: <Outlet />,
       children:
@@ -22,7 +21,7 @@ const routes = createBrowserRouter([
           ? dashboardMoreMenuData.map(({ menu }) => ({
               path: "",
               element: <Outlet />,
-              children: menu.map(({ path, title, element }) => ({
+              children: menu.map(({ path, element }) => ({
                 path: path,
                 element: element(),
               })),
@@ -31,7 +30,7 @@ const routes = createBrowserRouter([
           ? elementsMenuData.map(({ menu }) => ({
               path: "",
               element: <Outlet />,
-              children: menu.map(({ path, title, element }) => ({
+              children: menu.map(({ path, element }) => ({
                 path: path,
                 element: element(),
               })),
