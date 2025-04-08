@@ -1,5 +1,3 @@
-import React from "react";
-
 const Inputtext = () => {
   return <div>Inputtext</div>;
 };

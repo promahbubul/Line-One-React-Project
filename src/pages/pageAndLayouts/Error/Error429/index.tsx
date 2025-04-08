@@ -1,5 +1,3 @@
-import React from "react";
-
 const Error429 = () => {
   return <div>Error429</div>;
 };

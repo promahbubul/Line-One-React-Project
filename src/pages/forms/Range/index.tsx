@@ -1,5 +1,3 @@
-import React from "react";
-
 const Range = () => {
   return <div>Range</div>;
 };

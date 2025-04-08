@@ -1,5 +1,3 @@
-import React from "react";
-
 const Menulist = () => {
   return <div>Menulist</div>;
 };

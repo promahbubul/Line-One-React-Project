@@ -1,5 +1,3 @@
-import React from "react";
-
 const Inputmask = () => {
   return <div>Inputmask</div>;
 };
