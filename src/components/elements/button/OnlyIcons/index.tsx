@@ -1,5 +1,4 @@
 import CardContainer from "@/components/ui/CardContainer";
-import { IoHomeSharp } from "react-icons/io5";
 
 const OnlyIcons = () => {
   const codeString = `<div className="flex flex-wrap gap-3">

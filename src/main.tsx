@@ -4,7 +4,7 @@ import "./index.css";
 import { RouterProvider } from "react-router-dom";
 import routes from "./routes/index.tsx";
 import "react-tooltip/dist/react-tooltip.css";
-import AnimatedCursor from "react-animated-cursor";
+// import AnimatedCursor from "react-animated-cursor";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>

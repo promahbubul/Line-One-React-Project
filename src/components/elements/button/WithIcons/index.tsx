@@ -1,5 +1,4 @@
 import CardContainer from "@/components/ui/CardContainer";
-import { FaRegHeart } from "react-icons/fa";
 
 const WithIcons = () => {
   const codeString = `<div className="flex flex-wrap gap-3">

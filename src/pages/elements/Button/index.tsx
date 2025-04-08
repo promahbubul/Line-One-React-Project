@@ -1,4 +1,4 @@
-import { RoundeAvatar } from "@/components/elements/avatar";
+
 import {
   ButtonComponent,
   RoundedButton,
