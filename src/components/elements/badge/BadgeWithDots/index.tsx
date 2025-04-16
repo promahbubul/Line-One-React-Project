@@ -1,8 +1,7 @@
-import CardContainer from "@/components/ui/CardContainer"
+import CardContainer from "@/components/ui/CardContainer";
 
 const BadgeWithDots = () => {
-    const codeString = `<div className="flex flex-wrap gap-3">
-
+  const codeString = `<div className="flex flex-wrap gap-3">
   <button className="flex justify-center items-center gap-2 py-1 px-3 text-gray-700 text-sm rounded-full font-medium">
     <div className="w-2 h-2 bg-gray-700 rounded-full"></div>
     <span>Default</span>
@@ -43,9 +42,11 @@ const BadgeWithDots = () => {
   return (
     <CardContainer
       title={"Badge With Dots"}
-      description={"Badges can have a soft colors. To do this, you should use some opacity. Check out code for detail of usage."}
+      description={
+        "Badges can have a soft colors. To do this, you should use some opacity. Check out code for detail of usage."
+      }
       jsxCodeString={codeString}
     />
   );
-}
-export default BadgeWithDots
+};
+export default BadgeWithDots;
