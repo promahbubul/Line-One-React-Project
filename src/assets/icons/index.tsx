@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import bagIcon from "./bag.svg";
 import componentsIcon from "./components.svg";
 import elementsIcon from "./elements.svg";
@@ -12,8 +13,6 @@ import { GiPaintBucket } from "react-icons/gi";
 import { HiOutlineSquares2X2 } from "react-icons/hi2";
 import { LuSun } from "react-icons/lu";
 import { RiArrowLeftSLine } from "react-icons/ri";
-
-
 
 export {
   bagIcon,

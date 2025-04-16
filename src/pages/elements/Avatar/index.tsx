@@ -6,7 +6,7 @@ import {
   AvatarSkeleton,
   AvatarWithDots,
   BorderedInitialAvatar,
-  GradientBorder,
+  // GradientBorder,
   InitialAvatar,
   InitialWithDots,
   RoundeAvatar,
