@@ -10,13 +10,20 @@ type TCardContainer = {
   title: string;
   description: string;
   jsxCodeString: string;
-  components?: Record<string, React.ComponentType<never>>; // Corrected type for components
+  bindings?: Record<string, unknown>;
+  components?: Record<
+    string,
+    | React.ComponentType<object>
+    | React.ExoticComponent<object>
+    | (() => React.ReactNode)
+  >;
 };
 
 const CardContainer = ({
   title,
   description,
   jsxCodeString,
+  bindings = {}, // ✅ FIXED HERE
   components = {}, // Default components to an empty object if not passed
 }: TCardContainer) => {
   const [showCode, setShowCode] = useState(false);
@@ -30,7 +37,11 @@ const CardContainer = ({
       </div>
       <p className="w-1/2 text-sm text-[#62748e]">{description}</p>
       <div className="mb-5 mt-5">
-        <JsxParser components={components} jsx={jsxCodeString} />
+        <JsxParser
+          components={components}
+          bindings={bindings}
+          jsx={jsxCodeString}
+        />
       </div>
       {showCode && (
         <div className="h-80 border-red-500">
