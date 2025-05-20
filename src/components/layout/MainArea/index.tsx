@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 
 const MainArea = () => {
   return (
-    <div className="bg-[#f8fafc]  pt-28 px-10 h-[2000px]">
+    <div className="bg-[#f8fafc]  pt-20 px-10 pb-10 h-screen overflow-y-auto">
       <Outlet />
     </div>
   );
