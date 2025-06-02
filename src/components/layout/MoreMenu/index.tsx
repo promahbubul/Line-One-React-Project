@@ -37,7 +37,7 @@ const MoreMenu = ({ showMoreMenu }: { showMoreMenu: boolean }) => {
                 {menu.map(({ id, path, title }) => (
                   <LinkItems
                     key={id}
-                     path={`/${pathBase}/${path}`}
+                    path={`/${pathBase}/${path}`}
                     title={title}
                   />
                 ))}
@@ -49,7 +49,7 @@ const MoreMenu = ({ showMoreMenu }: { showMoreMenu: boolean }) => {
                 {menu.map(({ id, path, title }) => (
                   <LinkItems
                     key={id}
-                     path={`/${pathBase}/${path}`}
+                    path={`/${pathBase}/${path}`}
                     title={title}
                   />
                 ))}
@@ -61,7 +61,7 @@ const MoreMenu = ({ showMoreMenu }: { showMoreMenu: boolean }) => {
                 {menu.map(({ id, path, title }) => (
                   <LinkItems
                     key={id}
-                     path={`/${pathBase}/${path}`}
+                    path={`/${pathBase}/${path}`}
                     title={title}
                   />
                 ))}
@@ -73,7 +73,7 @@ const MoreMenu = ({ showMoreMenu }: { showMoreMenu: boolean }) => {
                 {menu.map(({ id, path, title }) => (
                   <LinkItems
                     key={id}
-                     path={`/${pathBase}/${path}`}
+                    path={`/${pathBase}/${path}`}
                     title={title}
                   />
                 ))}
@@ -82,10 +82,10 @@ const MoreMenu = ({ showMoreMenu }: { showMoreMenu: boolean }) => {
           : pathBase === "elements"
           ? elementsMenuData.map(({ group, menu }) => (
               <div className="border-b last:border-b-0" key={group}>
-                {menu.map(({ id, path, title }) => (
+                {menu.map(({ id, to, path, title }) => (
                   <LinkItems
                     key={id}
-                     path={`/${pathBase}/${path}`}
+                    path={to ? to : `/${pathBase}/${path}`}
                     title={title}
                   />
                 ))}

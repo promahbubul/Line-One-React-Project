@@ -285,7 +285,7 @@ const elementsMenuData = [
   {
     group: 2,
     menu: [
-      { element: Forms, id: 15, title: "Forms", path: "forms" },
+      { element: Forms, id: 15, title: "Forms", path: "forms", to: "/forms" },
       { element: Typography, id: 16, title: "Typography", path: "typography" },
     ],
   },
