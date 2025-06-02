@@ -1,7 +1,4 @@
-export const BasicSkeleton
- = () => {
-  return (
-    <div>BasicSkeleton
-</div>
-  )
-}
+const BasicSkeleton = () => {
+  return <div>BasicSkeleton</div>;
+};
+export default BasicSkeleton;
