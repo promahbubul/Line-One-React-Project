@@ -18,7 +18,7 @@ import Carousel from "./Carousel";
 import Notification from "./Notification";
 import Clipboard from "./Clipboard";
 import Persist from "./Persist";
-import MonochromeMode from "./Monochrome mode";
+import MonochromeMode from "./MonochromeMode";
 
 const Components = () => {
   return <div>Components</div>;

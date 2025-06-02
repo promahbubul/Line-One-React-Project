@@ -1,4 +1,5 @@
 import {
+  componentsMenuData,
   dashboardMoreMenuData,
   elementsMenuData,
 } from "@/constant/moreMenu.constant";
@@ -27,6 +28,15 @@ const routes = createBrowserRouter([
             }))
           : path === "/elements"
           ? elementsMenuData.map(({ menu }) => ({
+              path: "",
+              element: <Outlet />,
+              children: menu.map(({ path, element }) => ({
+                path: path,
+                element: element(),
+              })),
+            }))
+          : path === "/components"
+          ? componentsMenuData.map(({ menu }) => ({
               path: "",
               element: <Outlet />,
               children: menu.map(({ path, element }) => ({

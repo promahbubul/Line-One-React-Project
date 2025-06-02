@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
- import {
+import {
   CrmAnalytics,
   Orders,
   Cryptocurrency,
@@ -90,22 +90,37 @@
   Tooltip,
   Forms,
   Typography,
-} from '../pages'
+} from "../pages";
 const dashboardMoreMenuData = [
   {
     group: 1,
     menu: [
-      { id: 1, title: "CRM Analytics", path: "crm-analytics", element: CrmAnalytics },
+      {
+        id: 1,
+        title: "CRM Analytics",
+        path: "crm-analytics",
+        element: CrmAnalytics,
+      },
       { id: 2, title: "Orders", path: "orders", element: Orders },
     ],
   },
   {
     group: 2,
     menu: [
-      { id: 3, title: "Cryptocurrency", path: "cryptocurrency", element: Cryptocurrency },
+      {
+        id: 3,
+        title: "Cryptocurrency",
+        path: "cryptocurrency",
+        element: Cryptocurrency,
+      },
       { id: 4, title: "Banking", path: "banking", element: Banking },
       { id: 5, title: "Personal", path: "personal", element: Personal },
-      { id: 6, title: "CMS Analytics", path: "cms-analytics", element: CmsAnalytics },
+      {
+        id: 6,
+        title: "CMS Analytics",
+        path: "cms-analytics",
+        element: CmsAnalytics,
+      },
       { id: 7, title: "Influencer", path: "influencer", element: Influencer },
       { id: 8, title: "Travel", path: "travel", element: Travel },
       { id: 9, title: "Teacher", path: "teacher", element: Teacher },
@@ -115,14 +130,24 @@ const dashboardMoreMenuData = [
       { id: 13, title: "Employees", path: "employees", element: Employees },
       { id: 14, title: "Workspaces", path: "workspaces", element: Workspaces },
       { id: 15, title: "Meetings", path: "meetings", element: Meetings },
-      { id: 16, title: "Project Boards", path: "project-boards", element: ProjectBoards },
+      {
+        id: 16,
+        title: "Project Boards",
+        path: "project-boards",
+        element: ProjectBoards,
+      },
     ],
   },
   {
     group: 3,
     menu: [
       { id: 17, title: "Widget UI", path: "widget-ui", element: WidgetUi },
-      { id: 18, title: "Widget Contacts", path: "widget-contacts", element: WidgetContacts },
+      {
+        id: 18,
+        title: "Widget Contacts",
+        path: "widget-contacts",
+        element: WidgetContacts,
+      },
     ],
   },
 ];
@@ -217,42 +242,62 @@ const componentsMenuData = [
   {
     group: 1,
     menu: [
-      { id: 1, title: "Accordion", path: "accordion" },
-      { id: 2, title: "Collapse", path: "collapse" },
-      { id: 3, title: "Tab", path: "tab" },
-      { id: 4, title: "Dropdown", path: "dropdown" },
-      { id: 5, title: "Popover", path: "popover" },
-      { id: 6, title: "Modal", path: "modal" },
-      { id: 7, title: "Drawer", path: "drawer" },
-      { id: 8, title: "Steps", path: "steps" },
-      { id: 9, title: "Timeline", path: "timeline" },
-      { id: 10, title: "Pagination", path: "pagination" },
-      { id: 11, title: "Menu list", path: "menu-list" },
-      { id: 12, title: "Treeview", path: "treeview" },
+      { id: 1, element: Accordion, title: "Accordion", path: "accordion" },
+      { id: 2, element: Collapse, title: "Collapse", path: "collapse" },
+      { id: 3, element: Tab, title: "Tab", path: "tab" },
+      { id: 4, element: Dropdown, title: "Dropdown", path: "dropdown" },
+      { id: 5, element: Popover, title: "Popover", path: "popover" },
+      { id: 6, element: Modal, title: "Modal", path: "modal" },
+      { id: 7, element: Drawer, title: "Drawer", path: "drawer" },
+      { id: 8, element: Steps, title: "Steps", path: "steps" },
+      { id: 9, element: Timeline, title: "Timeline", path: "timeline" },
+      { id: 10, element: Pagination, title: "Pagination", path: "pagination" },
+      { id: 11, element: MenuList, title: "Menu list", path: "menu-list" },
+      { id: 12, element: Treeview, title: "Treeview", path: "treeview" },
     ],
   },
   {
     group: 2,
     menu: [
-      { id: 13, title: "Table", path: "table" },
-      { id: 14, title: "Table Advanced", path: "table-advanced" },
-      { id: 15, title: "Table Gridjs", path: "table-gridjs" },
+      { id: 13, element: Table, title: "Table", path: "table" },
+      {
+        id: 14,
+        element: TableAdvanced,
+        title: "Table Advanced",
+        path: "table-advanced",
+      },
+      {
+        id: 15,
+        element: TableGridjs,
+        title: "Table Gridjs",
+        path: "table-gridjs",
+      },
     ],
   },
   {
     group: 3,
     menu: [
-      { id: 16, title: "Apexcharts", path: "apexcharts" },
-      { id: 17, title: "Carousel", path: "carousel" },
-      { id: 18, title: "Notification", path: "notification" },
+      { id: 16, element: Apexcharts, title: "Apexcharts", path: "apexcharts" },
+      { id: 17, element: Carousel, title: "Carousel", path: "carousel" },
+      {
+        id: 18,
+        element: Notification,
+        title: "Notification",
+        path: "notification",
+      },
     ],
   },
   {
     group: 4,
     menu: [
-      { id: 19, title: "Clipboard", path: "clipboard" },
-      { id: 20, title: "Persist", path: "persist" },
-      { id: 21, title: "Monochrome mode", path: "monochrome-mode" },
+      { id: 19, element: Clipboard, title: "Clipboard", path: "clipboard" },
+      { id: 20, element: Persist, title: "Persist", path: "persist" },
+      {
+        id: 21,
+        element: MonochromeMode,
+        title: "Monochrome mode",
+        path: "monochrome-mode",
+      },
     ],
   },
 ];
@@ -290,8 +335,6 @@ const elementsMenuData = [
     ],
   },
 ];
-
-
 
 export {
   dashboardMoreMenuData,
