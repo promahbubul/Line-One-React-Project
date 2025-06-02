@@ -1,7 +1,4 @@
-import BasicTooltip from "../BasicTooltip";
-
-
-
-export {
-    BasicTooltip
-}
+const TooltipPosition = () => {
+  return <div>TooltipPosition</div>;
+};
+export default TooltipPosition;
