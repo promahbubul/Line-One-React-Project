@@ -1,5 +1,15 @@
+import {
+  BasicTreeView,
+  AdvancedTreeView,
+} from "@/components/components/treeview";
+
 const Treeview = () => {
-  return <div>Treeview</div>;
+  return (
+    <div className="space-y-5">
+      <BasicTreeView />
+      <AdvancedTreeView />
+    </div>
+  );
 };
 
 export default Treeview;
