@@ -6,7 +6,7 @@ import {
 
 const TableAdvanced = () => {
   return (
-    <div>
+    <div className="space-y-5">
       <UsersTable />
       <CollapsibleTable />
       <TableWithFilter />
