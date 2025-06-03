@@ -1,5 +1,5 @@
 const Timepicker = () => {
-  return <div>Timepicker</div>;
+  return <div className="space-y-5"></div>;
 };
 
 export default Timepicker;
