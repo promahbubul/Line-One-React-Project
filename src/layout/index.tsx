@@ -16,9 +16,9 @@ const Layout = () => {
         {/* MoreMenu  */}
         <MoreMenu showMoreMenu={showMoreMenu} />
         <section
-          className={`h-screen overflow-y-auto ease-in-out duration-300 ${
+          className={`h-screen overflow-y-auto box-border  absolute right-0 ease-in-out duration-300 ${
             showMoreMenu ? "w-[calc(100%-240px)]" : "w-full"
-          } `}
+          }`}
         >
           <TopNavigation
             showMoreMenu={showMoreMenu}

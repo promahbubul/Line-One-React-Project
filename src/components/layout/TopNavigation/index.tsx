@@ -16,15 +16,9 @@ const TopNavigation = ({
   setShowMoreMenu: React.Dispatch<React.SetStateAction<boolean>>;
 }) => {
   return (
-    <div
-      className={`bg-[#f8fafc] ease-in-out duration-500  ${
-        showMoreMenu ? "w-[calc(100%-320px)]" : "w-[calc(100%-80px)]"
-      }`}
-    >
+    <div className={`bg-[#f8fafc] relative ease-in-out duration-500 w-full  `}>
       <div
-        className={`h-[60px] fixed   bg-white/85 border-b flex flex-row items-center justify-between px-10 border-b-[#e9eef5] duration-500  ${
-          showMoreMenu ? "w-[calc(100%-320px)]" : "w-[calc(100%-80px)]"
-        }`}
+        className={`h-[60px]  absolute inset-x-0  bg-white/85 border-b flex flex-row items-center justify-between px-10 border-b-[#e9eef5] duration-500  `}
       >
         {/* Left */}
         <button onClick={() => setShowMoreMenu(!showMoreMenu)} className="">
