@@ -1,5 +1,21 @@
+import {
+  BasicNotification,
+  NotificationVariants,
+  NotificationPosition,
+  NotificationDuration,
+  CustomHTMLContent,
+} from "@/components/components/notification";
+
 const Notification = () => {
-  return <div>Notification</div>;
+  return (
+    <div className="space-y-5">
+      <BasicNotification />
+      <NotificationVariants />
+      <NotificationPosition />
+      <NotificationDuration />
+      <CustomHTMLContent />
+    </div>
+  );
 };
 
 export default Notification;
