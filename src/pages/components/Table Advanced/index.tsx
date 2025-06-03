@@ -1,5 +1,17 @@
+import {
+  UsersTable,
+  CollapsibleTable,
+  TableWithFilter,
+} from "@/components/components/tableadvanced";
+
 const TableAdvanced = () => {
-  return <div>TableAdvanced</div>;
+  return (
+    <div>
+      <UsersTable />
+      <CollapsibleTable />
+      <TableWithFilter />
+    </div>
+  );
 };
 
 export default TableAdvanced;
