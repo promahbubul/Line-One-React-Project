@@ -1,13 +1,13 @@
-import BasicDrawer from "./BasicDrawer";
+import BasicDropdown from "./BasicDropdown";
 import DropdownIcons from "./DropdownIcons";
 import HTMLContent from "./HTMLContent";
-import PrimaryDrawer from "./PrimaryDrawer";
+import PrimaryActions from "./PrimaryActions";
 import ScrolledDropdown from "./ScrolledDropdown";
 
 export {
-  BasicDrawer,
+  BasicDropdown,
   DropdownIcons,
   HTMLContent,
-  PrimaryDrawer,
+  PrimaryActions,
   ScrolledDropdown,
 };
