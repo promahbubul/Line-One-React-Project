@@ -10,13 +10,13 @@ const Layout = () => {
   const [showMoreMenu, setShowMoreMenu] = useState(true); // changable => state
 
   return (
-    <div className="flex flex-row  w-full">
+    <div className="flex flex-row  w-full bg-[#f8fafc]">
       <SideMenu />
-      <div className="flex flex-row w-full  h-screen">
+      <div className="flex flex-row w-full  h-screen relative">
         {/* MoreMenu  */}
         <MoreMenu showMoreMenu={showMoreMenu} />
         <section
-          className={`h-screen overflow-y-auto ${
+          className={`h-screen overflow-y-auto ease-in-out duration-300 ${
             showMoreMenu ? "w-[calc(100%-240px)]" : "w-full"
           } `}
         >

@@ -4,7 +4,7 @@ import { Tooltip } from "react-tooltip";
 
 const SideMenu = () => {
   return (
-    <div className="border-r-[#e9eef5] border-r bg-white  w-[79px]">
+    <div className="border-r-[#e9eef5] z-20 border-r bg-white  w-[80px]">
       <div className="">
         <img src="https://lineone.piniastudio.com/images/app-logo.svg" alt="" />
       </div>

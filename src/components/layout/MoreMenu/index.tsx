@@ -5,14 +5,14 @@ import { useLocation } from "react-router-dom";
 const MoreMenu = ({ showMoreMenu }: { showMoreMenu: boolean }) => {
   const { pathname } = useLocation();
 
-  
-
-  const pathBase = pathname.split("/")[1]
-  console.log(pathBase)
+  const pathBase = pathname.split("/")[1];
+  // console.log(pathBase)
   return (
     <div
-      className={`drop-shadow-2xl border-r border-r-[0.5]   overflow-y-auto px-5 py-10 shadow-red-500 ${
-        showMoreMenu ? "w-60" : " hidden"
+      className={`drop-shadow-2xl border-r ease-in-out duration-300 bg-white  border-r-[0.5] w-60  overflow-y-auto px-5 py-10 shadow-red-500 ${
+        showMoreMenu
+          ? "relative left-0"
+          : "overflow-hidden absolute inset-y-0   -left-60"
       }`}
     >
       <h3 className="text-[#555e6d] font-semibold text-lg">Dashboards</h3>
