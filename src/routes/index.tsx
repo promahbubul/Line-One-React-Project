@@ -1,7 +1,9 @@
 import {
+  applicationMoreMenuData,
   componentsMenuData,
   dashboardMoreMenuData,
   elementsMenuData,
+  formMenuData,
 } from "@/constant/moreMenu.constant";
 import { sideMenuData } from "@/constant/sideMenu.constant";
 import Layout from "@/layout";
@@ -37,6 +39,24 @@ const routes = createBrowserRouter([
             }))
           : path === "/components"
           ? componentsMenuData.map(({ menu }) => ({
+              path: "",
+              element: <Outlet />,
+              children: menu.map(({ path, element }) => ({
+                path: path,
+                element: element(),
+              })),
+            }))
+          : path === "/forms"
+          ? formMenuData.map(({ menu }) => ({
+              path: "",
+              element: <Outlet />,
+              children: menu.map(({ path, element }) => ({
+                path: path,
+                element: element(),
+              })),
+            }))
+          : path === "/applications"
+          ? applicationMoreMenuData.map(({ menu }) => ({
               path: "",
               element: <Outlet />,
               children: menu.map(({ path, element }) => ({
