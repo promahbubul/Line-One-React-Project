@@ -9,6 +9,7 @@ export default {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+
       colors: {
         // default: "#e9eef5",
         // light: "#e9eef5",
@@ -51,6 +52,16 @@ export default {
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+      },
+      keyframes: {
+        scroll: {
+          "0%": { left: "0%" },
+          "50%": { left: "50%" },
+          "100%": { left: "100%" },
+        },
+      },
+      animation: {
+        scroll: "scroll 2s linear infinite",
       },
     },
   },
